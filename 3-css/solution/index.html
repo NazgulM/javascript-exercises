@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS - WTJ - HYF</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>CSS</h1>
+<section>
+  <h2>Change the background of the page based on the userselection</h2>
+  <label>Color
+    <select id="backgroundColor">
+      <option value="yellow">yellow</option>
+      <option value="red">red</option>
+      <option value="orange">orange</option>
+    </select>
+  </label>
+  <button onclick="changeBackground()">Change background</button>
+</section>
+
+<section>
+  <h2 id="fontSizeTitle">Update the font-size of this title from the value of the input</h2>
+  <label>Font-size
+    <input type="number" value="10" id="fontSize">
+  </label>
+  <button onclick="updateFontSize()">Change font-size</button>
+</section>
+
+<section>
+  <h2>Check if the color in the input is a color available in CSS.<br> If yes, update the background of the page with that color (e.g. palegreen, lightblue, darkviolet...), if not, make the background red.</h2>
+  <label>Keyword
+    <input type="text" value="banana" id="colorWord">
+  </label>
+  <button onclick="colorKeyword()">Check color keyword</button>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
