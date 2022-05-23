@@ -44,11 +44,9 @@ function changeBoxColor(){
       coloredBox.style.backgroundColor = 'red';
     }  */
 let index = rgb.indexOf(color);
-    if (color !== 'blue') {
-      coloredBox.style.backgroundColor = rgb[index + 1];
-    } else if (color === 'blue') {
-      coloredBox.style.backgroundColor = rgb[0];
-    }
+var newIndex = index + 1;
+if(newIndex >= rgb.length) newIndex = 0;
+      coloredBox.style.backgroundColor = rgb[newIndex];
         
       
 
